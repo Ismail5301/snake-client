@@ -15,7 +15,8 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log('Connecting to Server');
-    conn.write('Name: XYZ');
+    conn.write('Name: GTR');
+    
     //setTimeout(() => {
     //  conn.write('Move: up');
     //}, 1000); 

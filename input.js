@@ -19,6 +19,9 @@ const handleUserInput = function (key) {
   if (key === 'd'){
     connection.write('Move: right');
   }
+  if (key === 'z'){
+    connection.write('Say: Brrrrrr!');
+  }
 };
 const setupInput = function (conn) {
   connection = conn;
@@ -30,9 +33,5 @@ const setupInput = function (conn) {
   return stdin;
 };
 
-const w = "Move: up";
-const a = "Move: left";
-const s = "Move: down";
-const d = 'Move: right';
 
 module.exports = {setupInput};
