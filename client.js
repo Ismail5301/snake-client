@@ -16,6 +16,12 @@ const connect = function () {
   conn.on("connect", () => {
     console.log('Connecting to Server');
     conn.write('Name: XYZ');
+    //setTimeout(() => {
+    //  conn.write('Move: up');
+    //}, 1000); 
+    //setTimeout(() => {
+    //  conn.write('Move: right');
+    //}, 4000); 
   });
 
   return conn;
